@@ -11,3 +11,5 @@ const allItens = async () => {
 
 // Exportando a função para ser utilizada em outros arquivos
 module.exports = allItens;
+
+
