@@ -36,7 +36,14 @@ Este é um projeto de exemplo para demonstrar como criar um servidor Node.js uti
 
 ## Configuração do Banco de Dados
 
-Antes de executar o projeto, certifique-se de ter um servidor MySQL em execução e criar um banco de dados com a tabela necessária. Você pode modificar as configurações de conexão com o banco de dados no arquivo `connection.js`.
+Antes de executar o projeto, é necessário configurar o banco de dados MySQL. Siga as etapas abaixo:
+
+1. Certifique-se de ter um servidor MySQL em execução em sua máquina local ou em algum servidor remoto.
+2. Crie um banco de dados MySQL utilizando o arquivo de dump fornecido na pasta `data-base`. Você pode importar o arquivo de dump usando o comando `mysql -u username -p database_name < dump_file.sql`, substituindo `username` pelo seu nome de usuário do MySQL e `database_name` pelo nome do banco de dados que deseja criar.
+3. Verifique e, se necessário, ajuste as configurações de conexão com o banco de dados no arquivo `connection.js`. Certifique-se de que as configurações de host, porta, usuário, senha e nome do banco de dados correspondam à sua configuração do MySQL.
+
+Com o banco de dados devidamente configurado, você estará pronto para executar o projeto.
+
 
 ## Execução
 
