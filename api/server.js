@@ -8,8 +8,7 @@ const allItens = require('./allItens');
 const loginUser = require('./loginUser');
 
 const registerUser = require('./register');
-const { connect } = require('./connection');
-const connection = require('./connection');
+
 
 // Inicializando o aplicativo express
 const app = express();
