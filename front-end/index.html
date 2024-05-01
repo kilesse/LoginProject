@@ -4,15 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Sistem</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="login.html" id="loginForm">
-        <label for="name">Name:</label> <input type="text" id="nomeOuEmail" name="user_name"> <br>
-        <label for="password">Password:</label> <input type="text" id="senha" name="user_password"> <br>
-       <button type="submit">log in</button>
-        <a href="register.html">Register</a>
-    </form>
+    <div class="background-blur"></div>
+    <div class="container">
+        <div class="right-text">
+            <h1>Lorem ipsum dolor sit amet, consectetur amet <br> dolore elit<h1>
+
+            <p class="paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="form-container">
+            <h1> Login</h1>
+            <form action="login.html" id="loginForm">
+                <div class="userName-input">
+                    <label for="name"></label> 
+                    <div class="icon-container-user">  <img src="images/user.png" alt="icone-user" ></div>
+                   
+                    <input type="text" id="nomeOuEmail" name="user_name" placeholder="User Name"> 
+                </div>
+
+               <br>
+
+                <div class="password-input">
+                    <label for="password"></label>
+                    <div class="icon-container-password">   <img src="images/lock.png" alt="icone-lock" ></div>
+                  
+                    <input type="text" id="senha" name="user_password" placeholder="PassWord"> 
+                </div>
+                
+               <br>
+                
+               <p>Don't have an account? <a href="register.html">Sign up<a> </p>  
+                <br>
+
+               <button type="submit">log in</button>
+               
+            </form>
+        </div>
+       
+    </div>
+    
 
 
     <script src="main.js"></script>
