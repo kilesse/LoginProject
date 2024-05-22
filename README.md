@@ -25,7 +25,7 @@ Este é um projeto de exemplo para demonstrar como criar um servidor Node.js uti
 4. Instale as dependências necessárias (express, mysql2 e nodemon):
 
     ```
-    npm install express mysql2 nodemon cors
+    npm install express mysql2 nodemon cors express body-parser
     ```
 
 5. Na pasta `package.json`, adicione o seguinte comando ao objeto `scripts`:
