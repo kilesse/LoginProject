@@ -1,4 +1,5 @@
 const connection = require('./connection');
+const { decryptPassword } = require('./cryptoUtils');
 
 // Função para fazer login de usuário
 const loginUser = async (nomeOuEmail, senha) => {
@@ -17,7 +18,8 @@ const loginUser = async (nomeOuEmail, senha) => {
 
         // Comparar a senha fornecida com a senha armazenada no banco de dados
         const user = result[0];
-        if (senha !== user.senha) {
+        const decryptedPassword = decryptPassword(Buffer.from(user.senha, 'base64')); 
+        if (senha !== decryptedPassword) {
             // Senha incorreta
             return { success: false, message: 'Senha incorreta' };
         }
