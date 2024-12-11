@@ -1,0 +1,148 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('/front-end/images/newYork.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(0.3vw);
+    font-family: "Roboto Condensed", sans-serif;
+  
+
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 35%;
+    min-width: 35%;
+    max-height: 60%;
+    min-height: 60%;
+    border-radius:0 3vw 0 3vw ;
+}   
+
+
+.container > h1{
+    color: whitesmoke;
+    font-size: 2.3vw;
+    margin-left: 7vw;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vw;
+}
+
+
+.registerForm > .name,
+.registerForm > .email,
+.registerForm > .password,
+.registerForm > .birthday {
+  margin: 1vw;
+  display: flex;
+  flex-direction: 2 column;
+  color: whitesmoke;
+  border-radius: 0.5vw;
+  padding: 0.4vw;
+  border: solid  0.073vw whitesmoke;
+}
+
+
+#nome, #email, #senha, #data_de_nascimento{
+    all: unset;    
+    max-width: 15vw;
+    min-width: 15vw;
+    max-height: 1.2vw;
+    min-height: 1.2vw;
+    border: none;
+    margin-left: 0.5vw;
+    color: whitesmoke;
+}
+
+label[for="nome"], label[for="email"], label[for="senha"], label[for="data_de_nascimento"]{
+ padding-left: 0.5vw;
+} 
+
+
+.submit{
+    margin-top: 1vw;
+    max-width: 10vw;
+    min-width: 10vw;
+    max-height: 2vw;
+    min-height: 2vw;
+    font-size: 1vw;
+    color: whitesmoke;
+    border-radius: 0.5vw;
+    border:  0.073vw solid;
+    background-color: transparent;
+    box-shadow: 0.073vw
+    0 0.052vw 0.104vw rgba(147, 147, 147, 0.6), 
+    0.104vw 0.052vw 0.208vw rgba(228, 228, 228, 0.6), 
+    0.104vw 0.208vw 0.156vw rgba(233, 233, 233, 0.6), 
+    0 0 0.364vw 0.104vw rgba(189, 189, 189, 0.6), 
+    inset 0 0.052vw 0.104vw rgba(114, 114, 114, 0.6), 
+    inset 0.104vw 0.052vw 0.208vw rgba(228, 228, 228, 0.6), 
+    inset 0.104vw 0.208vw 0.156vw rgba(233, 233, 233, 0.6), 
+    inset 0 0 0.364vw 0.104vw rgba(189, 189, 189, 0.6);
+  
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.submit:hover{
+    max-width: 10.2vw;
+    min-width: 10.2vw;
+    max-height: 2.2vw;
+    min-height: 2.2vw;
+    animation: piscando 3s infinite;
+    
+}
+
+@keyframes piscando {
+    0% {
+      border-color: transparent;
+      opacity: 0.1;
+    }
+    
+    2% {
+      border-color: rgba(222, 222, 222, 0.6);
+      opacity: 1;
+    }
+    
+    4% {
+      border-color: transparent;
+      opacity: 0.5;
+    }
+    
+    8% {
+      border-color: rgba(222, 222, 222, 0.6);
+      opacity: 1;
+    }
+    
+    28% {
+      border-color: rgba(222, 222, 222, 0.6);
+      opacity: 1;
+    }
+    
+    30% {
+      border-color: transparent;
+      opacity: 0.5;
+      color: rgba(48, 48, 48, 0.8);
+    }
+    
+    36% {
+      border-color: rgba(222, 222, 222, 0.6);
+      opacity: 1;
+    }
+    
+    100% {
+      border-color: rgba(222, 222, 222, 0.6);
+      opacity: 1;
+    }
+  }

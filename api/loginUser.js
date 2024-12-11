@@ -25,11 +25,15 @@ const loginUser = async (nomeOuEmail, senha) => {
         }
 
         // Login bem-sucedido
-        return { success: true, message: 'Login bem-sucedido' };
+        return {  success: true, message: 'Login bem-sucedido' 
+         };
     } catch (error) {
         console.error('Erro ao fazer login:', error);
         return { success: false, message: 'Erro ao fazer login' };
     }
+
 };
+
+
 
 module.exports = loginUser;

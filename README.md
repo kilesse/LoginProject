@@ -13,7 +13,7 @@ Este é um projeto de exemplo para demonstrar como criar um servidor Node.js uti
 2. Navegue até o diretório do projeto:
 
     ```
-    cd login-sistem
+    cd LoginProject
     ```
 
 3. Inicialize o npm para gerenciar as dependências do projeto:

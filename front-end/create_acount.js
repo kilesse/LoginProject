@@ -33,6 +33,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
 
         const data = await response.json();
         console.log(data);
+        window.location.href = 'http://127.0.0.1:5500/front-end/index.html';
     } catch (error) {
         console.error('Erro ao registrar usuário:', error);
     }
